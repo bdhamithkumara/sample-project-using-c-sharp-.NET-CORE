@@ -1,0 +1,24 @@
+﻿@page
+@model sample04.Pages.ProductsModel
+@{
+}
+
+<h1>prodcuts page</h1>
+
+<div class="row">
+
+    @foreach (var item in Model.FromClothsModel)
+    {
+        var imagepath = "./images/" + (item.ClothsImageNameForDisplay) + ".jpg";
+
+    <div class="col-4">
+        <img src="@imagepath" class="w-75 h-75" />
+        <h4>@item.ClothsNameForDisplay</h4>
+        <h4>@item.ClothsPriceForDisplay</h4>
+        <h4>@item.ClothsSizeForDisplay</h4>
+    </div>
+
+    }
+
+
+</div>

@@ -1,0 +1,74 @@
+﻿@page
+@model sample04.Pages.CustomOrderModel
+@{
+}
+
+<h1>custom order</h1>
+
+<div class="text-center">
+    <form method="post">
+        <label>Customer Name </label>
+        <input type="text" placeholder="enter your name" asp-for="ClothsModelClassFrom.ClothsCustomerName"/>
+        <br />
+        <label>Cloths Type </label>
+        <select asp-for="ClothsModelClassFrom.ClothsType">
+            <option value="tshirt">tshirt</option>
+            <option value="sweater">sweater</option>
+            <option value="coat">coat</option>
+            <option value="socks">socks</option>
+            <option value="shorts">shorts</option>
+            <option value="tie">tie</option>
+        </select>
+        <br />
+
+        <label>Cloths Size </label>
+        <select asp-for="ClothsModelClassFrom.ClothsSize">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+        </select>
+        <br />
+
+        <label>Cloths Brand </label>
+        <select asp-for="ClothsModelClassFrom.ClothsBrand">
+            <option value="Nike">Nike</option>
+            <option value="GUCCI">GUCCI</option>
+            <option value="Chanel">Chanel</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Hermes">Hermes</option>
+            <option value="Cartier">Cartier</option>
+        </select>
+        <br />
+        <button class="btn btn-danger" type="submit" >Place Order Now!</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ZARA
+
+H&M
+
+
+
+UNIQLO
+
+
+
+
+
+
+
+

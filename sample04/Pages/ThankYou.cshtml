@@ -1,0 +1,13 @@
+﻿@page
+@model sample04.Pages.ThankYouModel
+@{
+}
+
+@{
+    var imagepath = "./images/" + (Model.ClothsType + ".jpg");
+}
+
+<div class="text-center">
+    <h1>Thank you for Ordering! Your Order Details are...!</h1>
+    <img src="@imagepath" style="width:300px; height:300px" />
+</div>
